@@ -1,6 +1,7 @@
 package com.iiita.messmanagement;
 
 import android.graphics.Color;
+import android.os.Build;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.PagerAdapter;
@@ -30,16 +31,23 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        setNavigationBarColor();
         initUI();
+    }
+
+    private void setNavigationBarColor() {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LAYOUT_STABLE | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN);
+        }
     }
 
     private void initUI() {
         final ViewPager viewPager = (ViewPager) findViewById(R.id.vp_horizontal_ntb);
         registeredFragments.append(0,new com.iiita.messmanagement.fragment.MenuFragment());
-        registeredFragments.append(1,new com.iiita.messmanagement.fragment.MenuFragment());
-        registeredFragments.append(2,new com.iiita.messmanagement.fragment.MenuFragment());
-        registeredFragments.append(3,new com.iiita.messmanagement.fragment.MenuFragment());
-        registeredFragments.append(4,new com.iiita.messmanagement.fragment.MenuFragment());
+        registeredFragments.append(1,new com.iiita.messmanagement.fragment.ForumFragment());
+        registeredFragments.append(2,new com.iiita.messmanagement.fragment.RateFragment());
+        registeredFragments.append(3,new com.iiita.messmanagement.fragment.LeaderboardFragment());
+        registeredFragments.append(4,new com.iiita.messmanagement.fragment.AboutFragment());
 
         viewPager.setAdapter(new FragmentPagerAdapter(getSupportFragmentManager()) {
 
@@ -106,6 +114,8 @@ public class MainActivity extends AppCompatActivity {
 
         navigationTabBar.setModels(models);
         navigationTabBar.setViewPager(viewPager, 2);
+        navigationTabBar.setBgColor(Color.parseColor("#e0f7fa"));
+        navigationTabBar.setInactiveColor(Color.parseColor("#000000"));
         navigationTabBar.setOnPageChangeListener(new ViewPager.OnPageChangeListener() {
             @Override
             public void onPageScrolled(final int position, final float positionOffset, final int positionOffsetPixels) {
