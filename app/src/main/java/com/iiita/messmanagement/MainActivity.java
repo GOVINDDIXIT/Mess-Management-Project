@@ -35,15 +35,6 @@ public class MainActivity extends AppCompatActivity {
 
     private void initUI() {
         final ViewPager viewPager = (ViewPager) findViewById(R.id.vp_horizontal_ntb);
-//        viewPager.setOffscreenPageLimit(2);
-//        ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
-//        List<Fragment> fragmentList = null;
-//        adapter.AddFragment(new com.iiita.messmanagement.fragment.MenuFragment());
-//        adapter.AddFragment(new com.iiita.messmanagement.fragment.ForumFragment());
-//        adapter.AddFragment(new com.iiita.messmanagement.fragment.RateFragment());
-//        adapter.AddFragment(new com.iiita.messmanagement.fragment.LeaderboardFragment());
-//        adapter.AddFragment(new com.iiita.messmanagement.fragment.AboutFragment());
-//        viewPager.setAdapter(adapter);
         registeredFragments.append(0,new com.iiita.messmanagement.fragment.MenuFragment());
         registeredFragments.append(1,new com.iiita.messmanagement.fragment.MenuFragment());
         registeredFragments.append(2,new com.iiita.messmanagement.fragment.MenuFragment());
@@ -65,6 +56,7 @@ public class MainActivity extends AppCompatActivity {
         final String[] colors = getResources().getStringArray(R.array.default_preview);
 
         final NavigationTabBar navigationTabBar = (NavigationTabBar) findViewById(R.id.ntb_horizontal);
+        navigationTabBar.setAnimationDuration(100);
         final ArrayList<NavigationTabBar.Model> models = new ArrayList<>();
         models.add(
                 new NavigationTabBar.Model.Builder(
@@ -108,7 +100,7 @@ public class MainActivity extends AppCompatActivity {
                         Color.parseColor(colors[4]))
 //                        .selectedIcon(getResources().getDrawable(R.drawable.ic_eighth))
                         .title("About")
-//                        .badgeTitle("")
+                        .badgeTitle("")
                         .build()
         );
 
