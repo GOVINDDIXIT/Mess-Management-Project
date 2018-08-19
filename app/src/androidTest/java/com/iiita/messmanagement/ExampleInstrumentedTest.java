@@ -1,4 +1,4 @@
-package com.example.pranjal.messmanagement;
+package com.iiita.messmanagement;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

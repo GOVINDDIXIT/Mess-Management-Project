@@ -1,4 +1,4 @@
-package com.example.pranjal.messmanagement;
+package com.iiita.messmanagement;
 
 import org.junit.Test;
 

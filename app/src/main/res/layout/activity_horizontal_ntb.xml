@@ -25,7 +25,6 @@
         app:ntb_tinted="true"
         app:ntb_title_mode="all"
         app:ntb_titled="true"
-        app:ntb_badge_size="0dp"
         app:ntb_swiped="true"/>
 
 </LinearLayout>
