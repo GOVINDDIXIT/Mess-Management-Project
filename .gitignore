@@ -8,3 +8,4 @@
 /build
 /captures
 .externalNativeBuild
+backend/mess_review_system/db.sqlite3
