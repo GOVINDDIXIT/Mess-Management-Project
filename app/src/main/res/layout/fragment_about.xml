@@ -2,12 +2,42 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:paddingTop="32dp"
     tools:context="com.iiita.messmanagement.fragment.AboutFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="match_parent">
+
+        <include
+            layout="@layout/circular_avatar"
+            android:layout_width="match_parent"
+            android:layout_height="128dp" />
+
+        <include
+            android:id="@+id/user_card_about_id"
+            layout="@layout/user_about_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="76dp" />
+
+        <include
+            android:id="@+id/user_activity_card"
+            layout="@layout/user_activity_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_below="@id/user_card_about_id"/>
+        <include
+            layout="@layout/developer_about_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginBottom="32dp"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
 
 </FrameLayout>

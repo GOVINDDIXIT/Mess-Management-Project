@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorPrimaryDark">#FFef6c4d</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="graphCardBackgroundColor">#364d5a</color>
+    <color name="gradientColor">#FFef6c4d</color>
 </resources>
