@@ -25,7 +25,7 @@ SECRET_KEY = '3*fj=%!yty!$##u*le!&b9564cxik_=(x%3^9t$9!$3o(he+^)'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
 
 
 # Application definition
@@ -118,3 +118,5 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
 STATIC_URL = '/static/'
+
+GOOGLE_APP_CLIENT_ID = '286107063770-lmhg36glqppi98j274vle69c56g5rj25.apps.googleusercontent.com'
