@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "385022809328",
+    "firebase_url": "https://mess-management-c2dcb.firebaseio.com",
+    "project_id": "mess-management-c2dcb",
+    "storage_bucket": "mess-management-c2dcb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:385022809328:android:78c1130f5581271d",
+        "android_client_info": {
+          "package_name": "com.iiita.messmanagement"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "385022809328-tcrj3t6j4202dg58hbjq29d4i57detkf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.iiita.messmanagement",
+            "certificate_hash": "b0c0587159561e70b79b9ecd4c468402ebdfff29"
+          }
+        },
+        {
+          "client_id": "385022809328-r2sp1blemhb4lrdqstj54ln9afenf28j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDUrUUEf6kxEFzFfKhcSjBJuwY4Ves8GLs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "385022809328-r2sp1blemhb4lrdqstj54ln9afenf28j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
