@@ -1,10 +1,9 @@
-package com.iiita.messmanagement;
+package com.iiita.studentmessapp;
 
-import android.content.Context;
-import android.content.res.AssetManager;
+import android.content.Intent;
 import android.graphics.Color;
-import android.graphics.Typeface;
 import android.os.Build;
+import android.support.annotation.NonNull;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.content.ContextCompat;
@@ -12,24 +11,41 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.SparseArray;
-import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.iiita.studentmessapp.UserSignIn.Login;
+
 import java.util.ArrayList;
-import java.util.Locale;
 
 import devlight.io.library.ntb.NavigationTabBar;
 
 public class MainActivity extends AppCompatActivity {
-
+    private FirebaseAuth mAuth;
+    private FirebaseAuth.AuthStateListener mAuthListener;
     SparseArray<Fragment> registeredFragments = new SparseArray<Fragment>();
+
+
+    private void checkUserSignIn() {
+        mAuth = FirebaseAuth.getInstance();
+        if (mAuth.getCurrentUser()==null){
+            Intent intent = new Intent(MainActivity.this,Login.class);
+            startActivity(intent);
+            finish();
+        }
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        checkUserSignIn();
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        setNavigationBarColor();
         initUI();
     }
 
@@ -46,12 +62,13 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void initUI() {
+        setNavigationBarColor();
         final ViewPager viewPager = (ViewPager) findViewById(R.id.vp_horizontal_ntb);
-        registeredFragments.append(0,new com.iiita.messmanagement.fragment.MenuFragment());
-        registeredFragments.append(1,new com.iiita.messmanagement.fragment.ForumFragment());
-        registeredFragments.append(2,new com.iiita.messmanagement.fragment.RateFragment());
-        registeredFragments.append(3,new com.iiita.messmanagement.fragment.LeaderboardFragment());
-        registeredFragments.append(4,new com.iiita.messmanagement.fragment.AboutFragment());
+        registeredFragments.append(0, new com.iiita.studentmessapp.fragment.MenuFragment());
+        registeredFragments.append(1, new com.iiita.studentmessapp.fragment.ForumFragment());
+        registeredFragments.append(2, new com.iiita.studentmessapp.fragment.RateFragment());
+        registeredFragments.append(3, new com.iiita.studentmessapp.fragment.LeaderboardFragment());
+        registeredFragments.append(4, new com.iiita.studentmessapp.fragment.AboutFragment());
 
         viewPager.setAdapter(new FragmentPagerAdapter(getSupportFragmentManager()) {
 
@@ -72,45 +89,36 @@ public class MainActivity extends AppCompatActivity {
         final ArrayList<NavigationTabBar.Model> models = new ArrayList<>();
         models.add(
                 new NavigationTabBar.Model.Builder(
-                        getResources().getDrawable(R.drawable.ic_menu),
+                        getResources().getDrawable(R.drawable.ic_menu), +
                         Color.parseColor(colors[0]))
-//                        .selectedIcon(getResources().getDrawable(R.drawable.ic_menu))
                         .title("Menu")
-//                        .badgeTitle("NTB")
                         .build()
         );
         models.add(
                 new NavigationTabBar.Model.Builder(
                         getResources().getDrawable(R.drawable.ic_forum),
                         Color.parseColor(colors[1]))
-//                        .selectedIcon(getResources().getDrawable(R.drawable.ic_eighth))
                         .title("Forum")
-//                        .badgeTitle("with")
                         .build()
         );
         models.add(
                 new NavigationTabBar.Model.Builder(
                         getResources().getDrawable(R.drawable.ic_rate),
                         Color.parseColor(colors[2]))
-//                        .selectedIcon(getResources().getDrawable(R.drawable.ic_seventh))
                         .title("Rate")
-//                        .badgeTitle("state")
                         .build()
         );
         models.add(
                 new NavigationTabBar.Model.Builder(
                         getResources().getDrawable(R.drawable.ic_leaderboard),
                         Color.parseColor(colors[3]))
-//                        .selectedIcon(getResources().getDrawable(R.drawable.ic_eighth))
                         .title("Leaderboard")
-//                        .badgeTitle("icon")
                         .build()
         );
         models.add(
                 new NavigationTabBar.Model.Builder(
                         getResources().getDrawable(R.drawable.ic_about),
                         Color.parseColor(colors[4]))
-//                        .selectedIcon(getResources().getDrawable(R.drawable.ic_eighth))
                         .title("About")
                         .badgeTitle("")
                         .build()

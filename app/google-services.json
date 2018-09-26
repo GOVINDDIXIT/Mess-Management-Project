@@ -1,35 +1,35 @@
 {
   "project_info": {
-    "project_number": "385022809328",
-    "firebase_url": "https://mess-management-c2dcb.firebaseio.com",
-    "project_id": "mess-management-c2dcb",
-    "storage_bucket": "mess-management-c2dcb.appspot.com"
+    "project_number": "286568137308",
+    "firebase_url": "https://iiita-student-mess-app.firebaseio.com",
+    "project_id": "iiita-student-mess-app",
+    "storage_bucket": "iiita-student-mess-app.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:385022809328:android:78c1130f5581271d",
+        "mobilesdk_app_id": "1:286568137308:android:3f8e201b4b1867be",
         "android_client_info": {
-          "package_name": "com.iiita.messmanagement"
+          "package_name": "com.iiita.studentmessapp"
         }
       },
       "oauth_client": [
         {
-          "client_id": "385022809328-tcrj3t6j4202dg58hbjq29d4i57detkf.apps.googleusercontent.com",
+          "client_id": "286568137308-b7lsldt3m9pg921990aqjvrff03p2j5m.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.iiita.messmanagement",
-            "certificate_hash": "b0c0587159561e70b79b9ecd4c468402ebdfff29"
+            "package_name": "com.iiita.studentmessapp",
+            "certificate_hash": "0c7c725a45287829b033bb4f82f00cf2cf804919"
           }
         },
         {
-          "client_id": "385022809328-r2sp1blemhb4lrdqstj54ln9afenf28j.apps.googleusercontent.com",
+          "client_id": "286568137308-u2s2qthlrkae9eojgrtqvrt0tr0rmlr0.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDUrUUEf6kxEFzFfKhcSjBJuwY4Ves8GLs"
+          "current_key": "AIzaSyC497XTpKBTHED8euKvOzSUngQNYiLlngc"
         }
       ],
       "services": {
@@ -40,7 +40,7 @@
           "status": 2,
           "other_platform_oauth_client": [
             {
-              "client_id": "385022809328-r2sp1blemhb4lrdqstj54ln9afenf28j.apps.googleusercontent.com",
+              "client_id": "286568137308-u2s2qthlrkae9eojgrtqvrt0tr0rmlr0.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

@@ -1,4 +1,4 @@
-package com.iiita.messmanagement;
+package com.iiita.studentmessapp;
 
 import org.junit.Test;
 

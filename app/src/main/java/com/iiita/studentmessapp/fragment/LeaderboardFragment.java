@@ -1,4 +1,4 @@
-package com.iiita.messmanagement.fragment;
+package com.iiita.studentmessapp.fragment;
 
 import android.content.Context;
 import android.net.Uri;
@@ -12,7 +12,7 @@ import com.db.chart.animation.Animation;
 import com.db.chart.model.LineSet;
 import com.db.chart.model.Point;
 import com.db.chart.view.LineChartView;
-import com.iiita.messmanagement.R;
+import com.iiita.studentmessapp.R;
 
 
 public class LeaderboardFragment extends Fragment {

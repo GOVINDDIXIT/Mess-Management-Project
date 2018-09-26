@@ -1,16 +1,14 @@
-package com.iiita.messmanagement;
+package com.iiita.studentmessapp.UserSignIn;
 
 import android.content.Intent;
-import android.content.Intent;
-import android.net.Uri;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
+import com.iiita.studentmessapp.R;
 
 public class LogOut extends AppCompatActivity {
 

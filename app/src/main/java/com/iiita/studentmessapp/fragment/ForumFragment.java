@@ -1,4 +1,4 @@
-package com.iiita.messmanagement.fragment;
+package com.iiita.studentmessapp.fragment;
 
 import android.content.Context;
 import android.net.Uri;
@@ -8,7 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.iiita.messmanagement.R;
+import com.iiita.studentmessapp.R;
 
 /**
  * A simple {@link Fragment} subclass.

@@ -1,4 +1,4 @@
-package com.iiita.messmanagement;
+package com.iiita.studentmessapp;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

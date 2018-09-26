@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingTop="32dp"
-    tools:context="com.iiita.messmanagement.fragment.AboutFragment">
+    tools:context="com.iiita.studentmessapp.fragment.AboutFragment">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -40,6 +40,7 @@
             android:layout_marginHorizontal="16dp" />
 
         <Button
+            android:id="@+id/sign_out_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
