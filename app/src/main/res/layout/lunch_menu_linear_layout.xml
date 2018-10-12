@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_weight="1"
+android:layout_width="match_parent"
+android:layout_height="0dp"
+android:gravity="center_horizontal"
+android:orientation="vertical">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Breakfast"
+    android:gravity="center_horizontal"
+    android:textColor="@color/darkTextColor"
+    android:textSize="@dimen/largeFontSize"/>
+<TextView
+    android:id="@+id/tv_lunch"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="@dimen/midSizeFont"
+    android:text="Food in Breakfast"
+    android:layout_margin="8dp"/>
+</LinearLayout>

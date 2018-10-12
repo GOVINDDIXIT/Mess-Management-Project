@@ -3,7 +3,6 @@ package com.iiita.studentmessapp;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Build;
-import android.support.annotation.NonNull;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.content.ContextCompat;
@@ -64,11 +63,11 @@ public class MainActivity extends AppCompatActivity {
     private void initUI() {
         setNavigationBarColor();
         final ViewPager viewPager = (ViewPager) findViewById(R.id.vp_horizontal_ntb);
-        registeredFragments.append(0, new com.iiita.studentmessapp.fragment.MenuFragment());
-        registeredFragments.append(1, new com.iiita.studentmessapp.fragment.ForumFragment());
-        registeredFragments.append(2, new com.iiita.studentmessapp.fragment.RateFragment());
-        registeredFragments.append(3, new com.iiita.studentmessapp.fragment.LeaderboardFragment());
-        registeredFragments.append(4, new com.iiita.studentmessapp.fragment.AboutFragment());
+        registeredFragments.append(0, new com.iiita.studentmessapp.Fragment.MenuFragment());
+        registeredFragments.append(1, new com.iiita.studentmessapp.Fragment.ForumFragment());
+        registeredFragments.append(2, new com.iiita.studentmessapp.Fragment.RateFragment());
+        registeredFragments.append(3, new com.iiita.studentmessapp.Fragment.LeaderboardFragment());
+        registeredFragments.append(4, new com.iiita.studentmessapp.Fragment.AboutFragment());
 
         viewPager.setAdapter(new FragmentPagerAdapter(getSupportFragmentManager()) {
 

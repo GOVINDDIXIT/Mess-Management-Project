@@ -5,4 +5,5 @@
     <color name="colorAccent">#FF4081</color>
     <color name="graphCardBackgroundColor">#364d5a</color>
     <color name="gradientColor">#FFef6c4d</color>
+    <color name="darkTextColor">#f3000000</color>
 </resources>

@@ -1,6 +1,5 @@
-package com.iiita.studentmessapp.fragment;
+package com.iiita.studentmessapp.Fragment;
 
-import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;

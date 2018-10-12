@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:layout_margin="16dp"
-    tools:context="com.iiita.studentmessapp.fragment.LeaderboardFragment">
+    tools:context="com.iiita.studentmessapp.Fragment.LeaderboardFragment">
 
 
 </LinearLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_weekdays"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:gravity="center"
+        android:text="Weekdays"
+        android:textColor="@color/darkTextColor"
+        android:textSize="@dimen/headingFontSize"
+        android:textStyle="bold" />
+
+    <include layout="@layout/breakfast_menu_linear_layout">
+
+    </include>
+
+    <include layout="@layout/lunch_menu_linear_layout">
+
+    </include>
+
+    <include layout="@layout/dinner_menu_linear_layout">
+
+    </include>
+
+
+</LinearLayout>

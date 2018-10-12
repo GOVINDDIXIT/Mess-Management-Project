@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingTop="32dp"
-    tools:context="com.iiita.studentmessapp.fragment.AboutFragment">
+    tools:context="com.iiita.studentmessapp.Fragment.AboutFragment">
 
     <RelativeLayout
         android:layout_width="match_parent"

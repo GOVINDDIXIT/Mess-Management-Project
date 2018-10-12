@@ -1,16 +1,11 @@
-package com.iiita.studentmessapp.fragment;
+package com.iiita.studentmessapp.Fragment;
 
-import android.content.Context;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.db.chart.animation.Animation;
-import com.db.chart.model.LineSet;
-import com.db.chart.model.Point;
 import com.db.chart.view.LineChartView;
 import com.iiita.studentmessapp.R;
 
